@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+  <nav>
+    <ul class="sidebar">
+      <li><a href="#">L</a></li>
+      <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+      <li><a href="#Home">Home</a></li>
+      <li><a href="#About">About me</a></li>
+      <li><a href="#Skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact me</a></li>
+    </ul>
+    <ul>
+      <li><a href="#">L</a></li>
+      <li class="hideOnMobile"><a href="#Home">Home</a></li>
+      <li class="hideOnMobile"><a href="#About">About me</a></li>
+      <li class="hideOnMobile"><a href="#Skills">Skills</a></li>
+      <li class="hideOnMobile"><a href="#projects">Projects</a></li>
+      <li class="hideOnMobile"><a href="#contact">Contact me</a></li>
+      <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+    </ul>
+  </nav>
+
+  <section class="home" id="Home">
+    <div class="home-text">
+      <h1>Hello 👋, I am</h1>
+      <p class="typing-text">
+        <span id="changing-text"></span><span class="cursor">|</span>
+      </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae iure dolores laboriosam nam voluptas deserunt fugit? Ducimus dolor, corrupti velit rem suscipit sint fugiat, quis beatae obcaecati totam perspiciatis eius.</p>
+
+      <div class="social-icons">
+        <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <div class="image-box">
+      <img src="gif2 (1).gif" alt="My photo" />
+    </div>
+  </section>
+
+  <section class="about" id="About">
+    <div class="gif-box">
+      <img src="ChatGPT Image Apr 10, 2025, 11_21_01 PM.png" alt="My photo" />
+    </div>
+    <div class="about-text">
+      <h1>About me</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere error dolorem magnam sint animi, corrupti necessitatibus! Earum eos officia vel. Expedita tempore tempora eius quaerat nulla illum fugiat ipsum consectetur.
+
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills" id="Skills">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+      <div class="skill-card">
+        <i class="fab fa-html5"></i>
+        <h3>HTML</h3>
+      </div>
+      <div class="skill-card">
+        <i class="fab fa-css3-alt"></i>
+        <h3>CSS</h3>
+      </div>
+      <div class="skill-card">
+        <i class="fab fa-js"></i>
+        <h3>JavaScript</h3>
+      </div>
+      <div class="skill-card">
+        <i class="fab fa-python"></i>
+        <h3>Python</h3>
+      </div>
+    </div>
+  </section>
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+  
+      <!-- Project 1 -->
+      <div class="project-card">
+        <img src="image.png" alt="Mobile Store Website Screenshot">
+        <h3>Mobile Store Website</h3>
+        <p>A mobile e-commerce store front showcasing mobile products, categories, and a basic cart system.</p>
+        <p><strong>Tech:</strong>Boostrap</p>
+        <a href="https://mobilestore-3mm2hfhiq-laithas-projects.vercel.app/" target="_blank">Live Demo</a> |
+      </div>
+      <!-- Project 2 -->
+      <div class="project-card">
+        <img src="rockpaper.png" alt="Rock Paper Scissors Screenshot">
+        <h3>Rock Paper Scissors</h3>
+        <p>A fun browser game that lets you play Rock, Paper, Scissors against the computer. It keeps score and adds animations.</p>
+        
+        <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+        <a href="https://rock-paper-scissors-pearl-five.vercel.app/" target="_blank">Live Demo</a> 
+      </div>
+  
+      <!-- Project 3 -->
+      <div class="project-card">
+        <img src="quiz.png" alt="Quiz App Screenshot">
+        <h3>Quiz App</h3>
+        <p>A simple quiz application built with HTML, CSS, and JavaScript. It displays questions, validates answers, and shows the score.</p>
+        <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+        <a href="https://quizusing-js.netlify.app/" target="_blank">Live Demo</a> |
+      </div>
+  
+      <!-- Project 4 -->
+      <div class="project-card">
+        <img src="irrigation.jpg" alt="Automated Irrigation System Screenshot">
+        <h3>Automated Irrigation System</h3>
+        <p>An automated irrigation system that uses sensors to detect soil moisture and controls water flow accordingly.</p>
+        <p><strong>Tech:</strong> Arduino, Soil Moisture Sensor, Relay Module, C++</p>
+      </div>
+  
+    </div>
+  </section>
+  <section class="contact-section" id="contact">
+    <div class="contact-info">
+      <h2>Contact Me</h2>
+      <p><i class="fas fa-paper-plane"></i> contact@example.com</p>
+      <p><i class="fas fa-phone"></i> 0123456789</p>
+     <div class="social-icons">
+        <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+    <div class="contact-form">
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
